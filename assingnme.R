@@ -12,6 +12,7 @@ summary(simple.regression)
 multiple.regression <- lm(Installs ~ Reviews + Rating, data = applystore)
 summary(multiple.regression)
 library(tidyverse)
+#data cleanup
 
 applystore |> ggplot(aes(x = Reviews, y= Installs))
 applystore |> ggplot(aes(x = Reviews, y= Installs)) +geom_point() +geom_smooth(method = 'lm') + expand_limits(x = c(0, NA), y = c(0, NA)) +
