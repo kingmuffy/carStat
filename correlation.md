@@ -18,6 +18,15 @@ Calculate the sum of all the squared differences for the Y values and denote it 
 Multiply the sum of the products of the differences (Σ[(Xi - X̄)(Yi - Ȳ)]) by the reciprocal of the square root of the product of Σ(Xi - X̄)² and Σ(Yi - Ȳ)².
 The result is the correlation coefficient (r).
 Note that there are also other methods and software that can calculate the correlation coefficient automatically, such as statistical software packages like R, Python's NumPy or SciPy libraries, or spreadsheet applications like Microsoft Excel or Google Sheets. These tools provide built-in functions or methods to compute correlation coefficients.
+# Example data
+x <- c(1, 2, 3, 4, 5)
+y <- c(2, 4, 6, 8, 10)
+
+# Calculate correlation coefficient
+correlation <- cor(x, y)
+
+# Print the result
+print(correlation)
 
 
 
